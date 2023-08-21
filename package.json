@@ -1,0 +1,25 @@
+{
+  "name": "furry-friend-services",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm start\" ",
+    "test": "mocha test/*.spec.js --color",
+    "lint": "concurrently \"cd server && eslint src/*\" \"cd client && eslint src/*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.3.5",
+    "@types/mocha": "^10.0.1",
+    "chai": "^4.3.7",
+    "concurrently": "^8.2.0",
+    "eslint": "^8.47.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-react": "^7.33.2",
+    "mocha": "^10.2.0",
+    "prettier": "3.0.2"
+  }
+}
